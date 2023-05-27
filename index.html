@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLegal</title>
+    <link rel="icon" href="./images/mainpage/symbol.png">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.0/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./dist/common.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body class="gradient">
+    <header class="header">
+        <div class="big-container">
+            <div class="wrap grid">
+                <div class="item-1 ">
+                    <a href="./index.html" class="header-logo gap-4">
+                        <img src="./images/headerfooter/whitelogo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="header-contacts item-2 bg-blue">
+                    <form class="flex">
+                        <label>
+                            <input class="input" type="radio" name="lang" value="ua" id="ua">
+                            <span>УК</span>
+                        </label>
+                        <label>
+                            <input class="input" type="radio" name="lang" value="ru" id="ru">
+                            <span>РУ</span>
+                        </label>
+                        <label>
+                            <input class="input" type="radio" name="lang" value="en" id="en">
+                            <span>EN</span>
+                        </label>
+                    </form>
+                    <span class="dot"></span>
+                    <a href="https://goo.gl/maps/AkM5Zftc3rSYvw7g8" target="blank" class="adress">Київ, вул. Мечникова,
+                        14/1</a>
+                    <span class="dot"></span>
+                    <a href="tel:+380800211927" target="_blank" class="tel flex ">0800 211 927</a>
+                    <span class="dot"></span>
+                    <a href="https://www.facebook.com/" target="_blank" class="fb-icon fb-white active">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                fill="#B3B3BA" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="burger-menu item-3 flex">
+                    <input type="checkbox" class="hide-check">
+                    <p class="burger white">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                    <nav class="header-link">
+                        <ul class="navigation flex">
+                            <li class="nav-item">
+                                <a href="./pages/about.html" class="nav-link">про нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/services.html" class="nav-link">послуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/team.html" class="nav-link">команда</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/publications.html" class="nav-link">публікації</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/contact.html" class="nav-link">контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="bg-gradient">
+            <section class="content-section flex">
+                <span></span>
+                <div class="big-container">
+                    <h1 class="h-title">ви постачальник правових рішень</h1>
+                </div>
+                <a href="./pages/services.html" class="toTop" onclick="scrollToElem(this)">
+                    <svg width=" 42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_22728_11340)">
+                            <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+                            <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_22728_11340">
+                                <rect width="42" height="42" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </section>
+            <section class="tabs-section">
+                <div class="big-container">
+                    <div class="menu flex">
+                        <div class="first-menu flex nav nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="name nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">Послідовний</button>
+                            <button class="name nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">Орієнтований на споживача</button>
+                            <button class="name nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">Інноваційний</button>
+                            <button class="name nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">Орієнтований на бізнес</button>
+                        </div>
+                        <hr class="grey-border">
+                        <div class="second-menu flex tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab" tabindex="0">
+                                <h3 class="menu-title">Перетворюємо ідею юридичних послуг</h3>
+                                <p class="menu-wrap">Консолідуючи багаторічний досвід і практику, юристи компанії
+                                    супроводжують складні проекти та досягають низки важливих
+                                    для галузі рішень. Багато з них формують практику застосування морського права в
+                                    Україні.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                <h3 class="menu-title">Будуємо міцні
+                                    стосунки зі своїми клієнтами</h3>
+                                <p class="menu-wrap">Бути орієнтованим на клієнта означає ставити потреби, бажання та
+                                    вподобання клієнта в центр бізнес-операцій, стратегій і
+                                    процесів прийняття рішень.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                <h3 class="menu-title">Ми прагнемо розвивати свою сферу.</h3>
+                                <p class="menu-wrap">Ми надаємо пріоритет інноваціям у
+                                    своїй роботі та більше, ніж інші, готові ризикувати
+                                    та експериментувати з новими ідеями. Ми зосереджені на розробці нових рішень або
+                                    продуктів, які можуть створити цінність
+                                    для клієнтів або суспільства в цілому</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab" tabindex="0">
+                                <h3 class="menu-title">Орієнтовані на досягнення бізнес-цілей.
+                                </h3>
+                                <p class="menu-wrap">Підхід зазвичай передбачає пріоритетність
+                                    потреб та інтересів бізнесу над іншими міркуваннями,
+                                    такими як особисті уподобання чи соціальні цінності. Це може передбачати прийняття
+                                    рішень на основі фінансових даних і
+                                    аналізу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-services flex">
+                <div class="big-container">
+                    <div class="servises-link">
+                        <a href="./pages/services.html">Послуги
+                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                            </svg></a>
+                    </div>
+                    <h1 id="services-title" class="services-title">Що ми можемо робити краще за інших?</h1>
+                    <div class="services-items grid gap-30 mb-60">
+                        <div class="item flex">
+                            <a href="pages/childservices/servicesentry.html" class="icon flex">
+                                <img src="images/services/ecommerce.svg" alt="Icon" class="icon-img">
+                            </a>
+                            <a href="pages/childservices/servicesentry.html" class="item-title">ІТ та електронна
+                                комерція</a>
+                            <p class="wrap">Нескінченний потік договорів, податкові питання, трудові відносини,
+                                корпоративні документи - юридична робота відволікає
+                                від ведення бізнесу. Але тут не так вже й багато роботи, щоб найняти штатного юриста.
+                            </p>
+                        </div>
+                        <div class="item flex">
+                            <a href="pages/childservices/servicesentry.html" class="icon flex">
+                                <img src="images/services/support.svg" alt="Icon" class="icon-img">
+                            </a>
+                            <a href="pages/childservices/servicesentry.html" class="item-title">Комплексний щоденний
+                                юридичний супровід</a>
+                            <p class="wrap">Крім того, з часом робота стане однотипною і нецікавою для штатного юриста.
+                                І ми добре знаємо, як важко в Україні знайти
+                                хорошого кандидата з досвідом роботи у сфері інформаційних технологій.
+                            </p>
+                        </div>
+                        <div class="item flex">
+                            <a href="pages/childservices/servicesentry.html" class="icon flex">
+                                <img src="images/services/coprorate.svg" alt="Icon" class="icon-img">
+                            </a>
+                            <a href="pages/childservices/servicesentry.html" class="item-title">Структурування
+                                корпоративних відносин</a>
+                            <p class="wrap">Замість того, щоб просто надавати юридичні послуги, ми наймемо юриста або
+                                цілу команду, яка впишеться в повсякденне
+                                життя вашої компанії.
+                            </p>
+                        </div>
+                        <div class="item flex">
+                            <a href="pages/childservices/servicesentry.html" class="icon flex">
+                                <img src="images/services/trust.svg" alt="Icon" class="icon-img">
+                            </a>
+                            <a href="pages/childservices/servicesentry.html" class="item-title">Побудова договірних
+                                відносин</a>
+                            <p class="wrap">Раз на тиждень або тиждень за місяцем у вас є власний адвокат. Будь-хто в
+                                компанії може зловити це за кавоваркою і
+                                просто поговорити про поточні справи, а не чекати оновлення статусу.
+                            </p>
+                        </div>
+                        <div class="item flex">
+                            <a href="pages/childservices/servicesentry.html" class="icon flex">
+                                <img src="images/services/protection.svg" alt="Icon" class="icon-img">
+                            </a>
+                            <a href="pages/childservices/servicesentry.html" class="item-title">Захист бізнесу,
+                                інтелектуальної власності</a>
+                            <p class="wrap">А весь інший час працюватиме над новими різноплановими проектами, тому точно
+                                не зупиниться у професійному розвитку. Так
+                                чи інакше, всі Axon Partners працюватимуть на вас замість корпоративного юриста.
+                            </p>
+                        </div>
+                        <div class="item flex">
+                            <a href="pages/childservices/servicesentry.html" class="icon flex">
+                                <img src="images/services/court.svg" alt="Icon" class="icon-img">
+                            </a>
+                            <a href="pages/childservices/servicesentry.html" class="item-title">Судове
+                                представництво</a>
+                            <p class="wrap">Це мала, середня компанія чи лідер ринку? Місцевий бізнес чи
+                                транснаціональна компанія? У вас є свій юридичний відділ чи
+                                ні?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="profile-section">
+            <div class="big-container">
+                <div class="slider-cards owl-carousel owl-theme" id="slider-cards">
+                    <div class="card bg-grey gap-30 grid">
+                        <a href="pages/childteam/kobzar.html" class="i">
+                            <img src="images/team/team5.jpg" alt="Oksana Kobzar" class="card-img">
+                        </a>
+                        <div class="profile-wrap flex w">
+                            <a href="pages/childteam/kobzar.html" class="link mt-30">Команда ></a>
+                            <h3 class="profile-title mb-30">Ми зосереджені на розробці нових рішень або продуктів, які
+                                можуть створити цінність для клієнтів або суспільства в
+                                цілому.</h3>
+                            <div class="profile-name flex">
+                                <span>Оксана Кобзар</span>
+                                <span class="work">Адвокат, юрист з правом вести справу в суді.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-grey gap-30 grid">
+                        <a href="pages/childteam/melnik.html" class="i">
+                            <img src="images/team/team3.jpg" alt="Vladislav Melnik" class="card-img">
+                        </a>
+                        <div class="profile-wrap flex w">
+                            <a href="pages/childteam/melnik.html" class="link mt-30">Команда ></a>
+                            <h3 class="profile-title mb-30">Ми наймемо юриста або цілу команду, яка впишеться в
+                                повсякденне життя вашої компанії.</h3>
+                            <div class="profile-name flex">
+                                <span>Владислав Мельников</span>
+                                <span class="work">Асистент</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-grey gap-30 grid">
+                        <a href="pages/childteam/alexandrovsky.html" class="i">
+                            <img src="images/team/team1.png" alt="Alexander Alexandrovsky" class="card-img">
+                        </a>
+                        <div class="profile-wrap flex w">
+                            <a href="pages/childteam/alexandrovsky.html" class="link mt-30">Команда ></a>
+                            <h3 class="profile-title mb-30">Ми звикли брати на себе відповідальність та завжди
+                                гарантуємо
+                                чесну, вчасну
+                                допомогу, навіть у ситуаціях, коли більшість
+                                безсилі.</h3>
+                            <div class="profile-name flex">
+                                <span>Олександр Олександровський</span>
+                                <span class="work">Керуючий партнер</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="client">
+            <h3 class="client-title">ВОНИ ВЖЕ ДОВІРЯЮТЬ НАМ
+            </h3>
+            <div class="client-cards grid">
+                <a href="https://ithillel.ua" class="card1 flex" target="_blank">
+                    <img src="images/services/hillel.svg" alt="Client"></a>
+                <a href="http://wannabiz.com.ua/" class="card2 flex" target="_blank">
+                    <img src="images/services/wannabiz.svg" alt="Client"></a>
+                <a href="http://advertise.tapgerine.com/" class="card3 flex" target="_blank">
+                    <img src="images/services/tapgerine.svg" alt="Client"></a>
+                <a href="https://3dlook.me/" class="card4 flex" target="_blank">
+                    <img src="images/services/3dlook.svg" alt="Client"></a>
+                <a href="https://www.g2.com/products/orangear/reviews" class="card5 flex" target="_blank">
+                    <img src="images/services/orangear.svg" alt="Client"></a>
+                <a href="https://adtelligent.com/" class="card6 flex" target="_blank">
+                    <img src="images/services/adtelligent.svg" alt="Client"></a>
+                <a href="https://jobs.dou.ua/companies/clickky/" class="card7 flex" target="_blank">
+                    <img src="images/services/clickky.svg" alt="Client"></a>
+                <a href="https://ecolease.com.ua/eko-lizing/" class="card8 flex" target="_blank">
+                    <img src="images/services/eco-leasing.svg" alt="Client"></a>
+                <a href="https://www.infratec.eu/" class="card9 flex" target="_blank">
+                    <img src="images/services/ingratek.svg" alt="Client"></a>
+                <a href="https://www.synergy-bud.com.ua/projects/city-park-2-cherga/?gclid=CjwKCAjwov6hBhBsEiwAvrvN6Oz35o_SQQ7PqaMBMCPUWUjmL1Rt8Ap2J8KGlWrB47qn-KWHsHPtVhoCdcQQAvD_BwE&utm_content&utm_term&utm_medium=cpc&utm_source=google&utm_campaign=s-city-park-brend-sb"
+                    class="card10 flex" target="_blank">
+                    <img src="images/services/city-par.svg" alt="Client"></a>
+                <a href="http://www.artprintstudio.com.ua/" class="card11 flex" target="_blank">
+                    <img src="images/services/artprint.svg" alt="Client"></a>
+                <a href="https://www.ultimategiftcards.com.au/" class="card12 flex" target="_blank">
+                    <img src="images/services/ultimatecard.svg" alt="Client"></a>
+            </div>
+        </section>
+        <section class="section-recomended pt-30 bg-grey">
+            <div class="big-container">
+                <div class="recomended">
+                    <a href="pages/publications.html" class="link">Публікації ></a>
+                    <h2 class="rec-title">Рекомендовано</h2>
+                </div>
+                <div class="cards-news mb-0 grid">
+                    <div class="card-news first">
+                        <img class="img" src="images/publications/publication1.jpg" alt="Publications">
+                        <div class="wrap flex">
+                            <a class="topic" href="pages/publications.html">Асоційований капітал</a>
+                            <span class="date">22 квітня</span>
+                            <hr class="grey-line">
+                            <p class="wrapper">Я фахівець у проектах. Я співвласник юридичної фірми. Як це сталося.
+                                Перед входом батьки сказали мені, що якщо я…</p>
+                        </div>
+                    </div>
+                    <div class="card-news second">
+                        <img class="img" src="images/publications/publication2.jpg" alt="Publications">
+                        <div class="wrap flex">
+                            <a class="topic" href="pages/publications.html">Штраф для доброї корпорації: що буде з
+                                Google та іншими за порушення GDPR</a>
+                            <span class="date">29 вересня</span>
+                            <hr class="grey-line">
+                            <p class="wrapper">І чому стягнення 50 мільйонів євро може стати доленосним прецедентом,
+                                повідомляє Mind.ua 21 січня Нацкомісія з питань
+                                захисту інформації.</p>
+                        </div>
+                    </div>
+                    <div class="card-news third">
+                        <img class="img" src="images/publications/publication3.jpg" alt="Publications">
+                        <div class="wrap flex">
+                            <a class="topic" href="pages/publications.html">Тисячолітній Заповіт</a>
+                            <span class="date">19 серпня</span>
+                            <hr class="grey-line">
+                            <p class="wrapper">Що і як успадкують сучасні відеоблогери, лідери думок і криптомільйонери
+                                Типовий спадок українського покоління Х
+                                виглядає так: квартира в…</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="big-container">
+            <div class="line mt-30">
+                <hr class="footer-grey-line">
+            </div>
+            <div class="big-container-main flex">
+                <div class="contacts">
+                    <div class="adress flex">Київ, вул. Мечникова, 14/1
+                        <span class="dot"></span>
+                        <a href="https://goo.gl/maps/AkM5Zftc3rSYvw7g8" target="_blank" class="map">На карті</a>
+                    </div>
+                    <div class="conect flex">
+                        <a href="https://www.facebook.com/" target="_blank" class="fb-icon-blue active">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                    fill="#24A3FF" />
+                            </svg>
+                        </a>
+                        <span class="dot"></span>
+                        <a href="tel:+380800211927" target="_blank" class="tel">0800 211 927</a>
+                        <span class="dot"></span>
+                        <a href="mailto:contact@forstudy.space" target="_blank" class="email">contact@forstudy.space</a>
+                    </div>
+                </div>
+                <p class="copy-rights">&copy;2023 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

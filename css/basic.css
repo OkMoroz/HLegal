@@ -1,0 +1,134 @@
+:root {
+  --big-container-width: 1600px;
+  --small-container-width: 1360px;
+  --basic-space: 1.875rem;
+  --bg-white: #ffffff;
+  --bg-blue: #323264;
+  --bg-grey: #f5f5fa;
+  --bg-gradient: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  --text-color: #323264;
+  --color-red: #f0145a;
+  --color-grey: #b3b3ba;
+  --color-blue: #24a3ff;
+  --color-white: #ffffff;
+  --logo-height: 120px;
+  --scrollbar-width: 17px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ry-rem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text-color);
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--bg-white);
+}
+
+.big-container {
+  max-width: calc(var(--big-container-width) + var(--basic-space) * 2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--basic-space);
+  padding-right: var(--basic-space);
+}
+.small-container {
+  max-width: calc(var(--small-container-width) + var(--basic-space) * 2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--basic-space);
+  padding-right: var(--basic-space);
+}
+.hidden {
+  display: none !important;
+}
+.transition {
+  transition: all 0.3s linear;
+}
+.bg-gradient {
+  background: var(--bg-gradient);
+  color: var(--color-white);
+}
+.bg-white {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+.bg-grey {
+  background: var(--bg-grey);
+  color: var(--text-color);
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mt-24{
+  margin-top: 24px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+.relative {
+  position: relative;
+}
